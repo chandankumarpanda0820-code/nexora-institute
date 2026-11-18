@@ -3617,3 +3617,60 @@ button {
     flex-wrap: wrap;
   }
 }
+
+/* NEXORA — FINAL MOBILE OVERFLOW FIX */
+
+@media (max-width: 576px) {
+  .nexora-contact {
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  .nexora-contact .contact-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .nexora-contact .contact-layout {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+  }
+
+  .nexora-contact .contact-layout > div {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .nexora-contact .contact-information {
+    padding: 0 !important;
+    min-width: 0;
+  }
+
+  .nexora-contact .contact-info-top h3 {
+    width: 100%;
+    font-size: 34px;
+    letter-spacing: -1px;
+    overflow-wrap: anywhere;
+  }
+
+  .nexora-contact .contact-detail {
+    max-width: 100%;
+  }
+
+  .nexora-contact .contact-detail a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .nexora-contact .admission-form-card {
+    width: 100%;
+    min-width: 0;
+  }
+}
